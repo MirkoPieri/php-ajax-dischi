@@ -40,8 +40,8 @@
     <script id="entry-template" type="text/x-handlebars-template">
       <div class="entry">
         <h1>{{title}}</h1>
-        <p>{{autore}}</p>
-        <p>{{data}}</p>
+        <p>Autore: {{autore}}</p>
+        <p>Data di uscita: {{data}}</p>
       </div>
     </script>
   </body>
