@@ -8,59 +8,60 @@
   //array di dischi musicali
   $music = [
     [
+      'data' => '1999',
       'title' => 'titolo1',
-      'autore' => 'Autore1',
-      'data' => '1999'
+      'autore' => 'Autore1'
     ],
     [
+      'data' => '1997',
       'title' => 'titolo2',
-      'autore' => 'Autore2',
-      'data' => '1997'
+      'autore' => 'Autore2'
     ],
     [
+      'data' => '2012',
       'title' => 'titolo3',
-      'autore' => 'Autore3',
-      'data' => '2012'
+      'autore' => 'Autore3'
     ],
     [
+      'data' => '1994',
       'title' => 'titolo4',
-      'autore' => 'Autore4',
-      'data' => '1994'
+      'autore' => 'Autore4'
     ],
     [
+      'data' => '2006',
       'title' => 'titolo5',
-      'autore' => 'Autore5',
-      'data' => '2006'
+      'autore' => 'Autore5'
     ],
     [
+      'data' => '1996',
       'title' => 'titolo6',
-      'autore' => 'Autore6',
-      'data' => '1996'
+      'autore' => 'Autore6'
     ],
     [
+      'data' => '2000',
       'title' => 'titolo7',
-      'autore' => 'Autore7',
-      'data' => '2000'
+      'autore' => 'Autore7'
     ],
     [
+      'data' => '1999',
       'title' => 'titolo8',
-      'autore' => 'Autore8',
-      'data' => '1999'
+      'autore' => 'Autore8'
     ],
     [
+      'data' => '1999',
       'title' => 'titolo9',
-      'autore' => 'Autore9',
-      'data' => '1999'
+      'autore' => 'Autore9'
     ],
     [
+      'data' => '1999',
       'title' => 'titolo10',
-      'autore' => 'Autore10',
-      'data' => '1999'
+      'autore' => 'Autore10'
     ]
   ];
 
   $new = []; //array per inserire solo risultati inerenti alla ricerca
 
+  sort($music);
 
   foreach ($music as $value) { //cerco corrispondenza con ricerca utennte
     if ($value['autore'] == $searchNew ) {

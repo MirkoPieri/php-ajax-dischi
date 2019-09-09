@@ -35,11 +35,13 @@ function getElement() {
 
 function print(data) {
 
+  var dataOrd = data.sort(); //tentativo di ordinamento per data di uscita
+  console.log(dataOrd, 'ordinata');
   var source   = document.getElementById("entry-template").innerHTML;
   var template = Handlebars.compile(source);
 
-  for (var i = 0; i < data.length; i++) {
-    var context = {title: data[i].title, autore: data[i].autore, data: data[i].data};
+  for (var i = 0; i < dataOrd.length; i++) {
+    var context = {title: dataOrd[i].title, autore: dataOrd[i].autore, data: dataOrd[i].data};
     var html = template(context);
 
     $('.container').append(html);
